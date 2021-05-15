@@ -105,7 +105,7 @@ const monitor = async() => {
 				// Only send image data when there is an image/video/gif present.
 				if (tweet.entities.media) embed.setImage(tweet.entities.media[0].media_url)
 
-			if(tweet.user.screen_name === process.env.OWNER_SCREEN_NAME) {
+			//if(tweet.user.screen_name === process.env.OWNER_SCREEN_NAME) {
 				ownerHook.send(embed)
 			} else {
 				gamingHook.send(embed)
